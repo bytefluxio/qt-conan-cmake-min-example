@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(unifig)
+project(MinExample)
 
 set(CMAKE_CXX_STANDARD 20)
 
