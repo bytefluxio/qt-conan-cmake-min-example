@@ -1,5 +1,5 @@
 [requires]
-qt/5.15.2
+qt/6.1.1
 
 [generators]
 cmake
