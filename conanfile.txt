@@ -1,6 +1,13 @@
 [requires]
 qt/6.1.1
 
+[options]
+qt:shared=True
+
 [generators]
 cmake
 qt
+
+[imports]
+bin, *.dll -> ./bin # Copies all dll files from packages bin folder to my local "bin" folder
+lib, *.dylib* -> ./bin # Copies all dylib files from packages lib folder to my local "bin" folder
