@@ -14,4 +14,9 @@ endif()
 set(PROJECT_SOURCES
         main.cpp)
 
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+conan_basic_setup()
+
 add_executable(${PROJECT_NAME} ${PROJECT_SOURCES})
+
+conan_target_link_libraries(${PROJECT_NAME})
